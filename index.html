@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Best Friend 💖</title>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('Armaan.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  animation: fadeIn 2s ease-in-out;
+}
+
+p {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  background: pink;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: hotpink;
+  transform: scale(1.1);
+}
+
+#hiddenMsg {
+  display: none;
+  margin-top: 20px;
+  font-size: 1.8rem;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+</style>
+</head>
+
+<body>
+
+<h1>Hey Bestie 💖</h1>
+<p>You are very special to me 😊</p>
+
+<button onclick="showMessage()">Click for Surprise 🎁</button>
+
+<div id="hiddenMsg">
+  You are my special friend, and I will always be with you. Never consider yourself alone—I will always stand by your side. Even if I am far away, I am always close to you. 💖 <br>
+</div>
+
+<script>
+function showMessage() {
+  document.getElementById("hiddenMsg").style.display = "block";
+}
+</script>
+
+</body>
+</html>
